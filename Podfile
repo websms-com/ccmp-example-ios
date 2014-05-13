@@ -1,6 +1,6 @@
 platform :ios, '6.0'
 
-xcodeproj 'ccmp-example-ios'
+xcodeproj '//  ccmp-example-ios'
 inhibit_all_warnings!
 
 pod 'CCMP', :git => 'https://github.com/websms-com/ccmp-lib-ios.git'

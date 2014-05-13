@@ -39,7 +39,7 @@
 		F6D4A7A418C4753E000D2326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78318C4753E000D2326 /* Foundation.framework */; };
 		F6D4A7A518C4753E000D2326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78718C4753E000D2326 /* UIKit.framework */; };
 		F6D4A7AD18C4753E000D2326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4A7AB18C4753E000D2326 /* InfoPlist.strings */; };
-		F6D4A7AF18C4753E000D2326 /* SMS2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7AE18C4753E000D2326 /* SMS2Tests.m */; };
+		F6D4A7AF18C4753E000D2326 /* ExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7AE18C4753E000D2326 /* ExampleTests.m */; };
 		F6D4A7BC18C476A7000D2326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4A7BB18C476A7000D2326 /* InfoPlist.strings */; };
 		F6D4A7C118C476B0000D2326 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7BE18C476B0000D2326 /* WSAppDelegate.m */; };
 		F6D4A7CA18C47746000D2326 /* WSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7C918C47746000D2326 /* WSConstants.m */; };
@@ -97,7 +97,6 @@
 		F6A010B618CE1374007509EA /* WSPinVerificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSPinVerificationViewController.m; path = Classes/WSPinVerificationViewController.m; sourceTree = "<group>"; };
 		F6A010C618CF08F2007509EA /* WSLoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSLoginData.h; path = Classes/WSLoginData.h; sourceTree = "<group>"; };
 		F6A010C718CF08F2007509EA /* WSLoginData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSLoginData.m; path = Classes/WSLoginData.m; sourceTree = "<group>"; };
-		F6A010F418CF2ABD007509EA /* ccmp-example-ios-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ccmp-example-ios-Staging-Info.plist"; sourceTree = "<group>"; };
 		F6D4A78018C4753E000D2326 /* ccmp-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ccmp-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6D4A78318C4753E000D2326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6D4A78518C4753E000D2326 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -109,7 +108,7 @@
 		F6D4A7A218C4753E000D2326 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F6D4A7AA18C4753E000D2326 /* ccmp-example-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ccmp-example-iosTests-Info.plist"; sourceTree = "<group>"; };
 		F6D4A7AC18C4753E000D2326 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		F6D4A7AE18C4753E000D2326 /* SMS2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS2Tests.m; sourceTree = "<group>"; };
+		F6D4A7AE18C4753E000D2326 /* ExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExampleTests.m; sourceTree = "<group>"; };
 		F6D4A7BB18C476A7000D2326 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		F6D4A7BD18C476B0000D2326 /* WSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSAppDelegate.h; path = Classes/WSAppDelegate.h; sourceTree = "<group>"; };
 		F6D4A7BE18C476B0000D2326 /* WSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSAppDelegate.m; path = Classes/WSAppDelegate.m; sourceTree = "<group>"; };
@@ -300,8 +299,7 @@
 				F6D4A7B818C47621000D2326 /* Classes */,
 				F6D4A78A18C4753E000D2326 /* Supporting Files */,
 			);
-			name = "ccmp-example-ios";
-			path = SMS2;
+			path = "ccmp-example-ios";
 			sourceTree = "<group>";
 		};
 		F6D4A78A18C4753E000D2326 /* Supporting Files */ = {
@@ -309,7 +307,6 @@
 			children = (
 				F612E6BC18D04E57004FE0C5 /* Ressources */,
 				F6D4A78B18C4753E000D2326 /* ccmp-example-ios-Info.plist */,
-				F6A010F418CF2ABD007509EA /* ccmp-example-ios-Staging-Info.plist */,
 				F6D4A7BB18C476A7000D2326 /* InfoPlist.strings */,
 				F6D4A78F18C4753E000D2326 /* main.m */,
 				F6D4A79118C4753E000D2326 /* ccmp-example-ios-Prefix.pch */,
@@ -321,11 +318,10 @@
 		F6D4A7A818C4753E000D2326 /* ccmp-example-iosTests */ = {
 			isa = PBXGroup;
 			children = (
-				F6D4A7AE18C4753E000D2326 /* SMS2Tests.m */,
+				F6D4A7AE18C4753E000D2326 /* ExampleTests.m */,
 				F6D4A7A918C4753E000D2326 /* Supporting Files */,
 			);
-			name = "ccmp-example-iosTests";
-			path = SMS2Tests;
+			path = "ccmp-example-iosTests";
 			sourceTree = "<group>";
 		};
 		F6D4A7A918C4753E000D2326 /* Supporting Files */ = {
@@ -557,7 +553,7 @@
 			files = (
 				F6A010A918CE048A007509EA /* NSUserDefaults+Websms.m in Sources */,
 				F6A010AD18CE0C53007509EA /* WSLoginViewController.m in Sources */,
-				F6D4A7AF18C4753E000D2326 /* SMS2Tests.m in Sources */,
+				F6D4A7AF18C4753E000D2326 /* ExampleTests.m in Sources */,
 				F6A010C918CF08F2007509EA /* WSLoginData.m in Sources */,
 				F6A010B818CE1374007509EA /* WSPinVerificationViewController.m in Sources */,
 				F6A010B318CE0F02007509EA /* WSViewController.m in Sources */,
@@ -674,12 +670,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SMS2/ccmp-example-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "ccmp-example-ios/ccmp-example-ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"LIVE=1",
 				);
-				INFOPLIST_FILE = "SMS2/ccmp-example-ios-Info.plist";
+				INFOPLIST_FILE = "ccmp-example-ios/ccmp-example-ios-Info.plist";
 				PRODUCT_NAME = "ccmp-example-ios";
 				PROVISIONING_PROFILE = "A5E543E3-A399-4C4C-8EE2-3C3EF4FD3B62";
 				WRAPPER_EXTENSION = app;
@@ -694,12 +690,12 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SMS2/ccmp-example-ios-Prefix.pch";
+				GCC_PREFIX_HEADER = "ccmp-example-ios/ccmp-example-ios-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"LIVE=1",
 				);
-				INFOPLIST_FILE = "SMS2/ccmp-example-ios-Info.plist";
+				INFOPLIST_FILE = "ccmp-example-ios/ccmp-example-ios-Info.plist";
 				PRODUCT_NAME = "ccmp-example-ios";
 				PROVISIONING_PROFILE = "FA664F26-DB92-4779-A2DA-F0FAA6EDFEC5";
 				WRAPPER_EXTENSION = app;
