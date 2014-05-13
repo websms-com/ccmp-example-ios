@@ -1,0 +1,784 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AA0BDCA094A43BBA60DFF90 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 426829B2AFEA443296F78E7A /* libPods.a */; };
+		F612E5D318CF2CD0004FE0C5 /* WSInboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F612E5D218CF2CD0004FE0C5 /* WSInboxViewController.m */; };
+		F612E5DD18CF2EE0004FE0C5 /* WSInboxCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F612E5DC18CF2EE0004FE0C5 /* WSInboxCell.m */; };
+		F612E6C418D04E98004FE0C5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F612E6BF18D04E98004FE0C5 /* Images.xcassets */; };
+		F612E6C618D04E98004FE0C5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F612E6C118D04E98004FE0C5 /* Login.storyboard */; };
+		F612E6C818D04E98004FE0C5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F612E6C218D04E98004FE0C5 /* Main.storyboard */; };
+		F612E6CA18D04E98004FE0C5 /* WSInboxCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F612E6C318D04E98004FE0C5 /* WSInboxCell.xib */; };
+		F612E73418D0678D004FE0C5 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F612E73318D0678D004FE0C5 /* UIColor+Extension.m */; };
+		F63C0E741920FA5E0045D5FF /* UIImage+Websms.m in Sources */ = {isa = PBXBuildFile; fileRef = F63C0E731920FA5E0045D5FF /* UIImage+Websms.m */; };
+		F66CD92718E07D3B00595207 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F66CD92518E07D3500595207 /* AVFoundation.framework */; };
+		F69489511922002000461486 /* ClientGrowingTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F694894E1922002000461486 /* ClientGrowingTextView.m */; };
+		F69489521922002000461486 /* ClientLineView.m in Sources */ = {isa = PBXBuildFile; fileRef = F69489501922002000461486 /* ClientLineView.m */; };
+		F69489551922002900461486 /* WSChatBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F69489541922002900461486 /* WSChatBar.m */; };
+		F6A010A818CE048A007509EA /* NSUserDefaults+Websms.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010A718CE048A007509EA /* NSUserDefaults+Websms.m */; };
+		F6A010A918CE048A007509EA /* NSUserDefaults+Websms.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010A718CE048A007509EA /* NSUserDefaults+Websms.m */; };
+		F6A010AC18CE0C53007509EA /* WSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010AB18CE0C53007509EA /* WSLoginViewController.m */; };
+		F6A010AD18CE0C53007509EA /* WSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010AB18CE0C53007509EA /* WSLoginViewController.m */; };
+		F6A010AF18CE0D7D007509EA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6A010AE18CE0D7D007509EA /* QuartzCore.framework */; };
+		F6A010B218CE0F02007509EA /* WSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010B118CE0F02007509EA /* WSViewController.m */; };
+		F6A010B318CE0F02007509EA /* WSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010B118CE0F02007509EA /* WSViewController.m */; };
+		F6A010B718CE1374007509EA /* WSPinVerificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010B618CE1374007509EA /* WSPinVerificationViewController.m */; };
+		F6A010B818CE1374007509EA /* WSPinVerificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010B618CE1374007509EA /* WSPinVerificationViewController.m */; };
+		F6A010C818CF08F2007509EA /* WSLoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010C718CF08F2007509EA /* WSLoginData.m */; };
+		F6A010C918CF08F2007509EA /* WSLoginData.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A010C718CF08F2007509EA /* WSLoginData.m */; };
+		F6D4A78418C4753E000D2326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78318C4753E000D2326 /* Foundation.framework */; };
+		F6D4A78618C4753E000D2326 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78518C4753E000D2326 /* CoreGraphics.framework */; };
+		F6D4A78818C4753E000D2326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78718C4753E000D2326 /* UIKit.framework */; };
+		F6D4A79018C4753E000D2326 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A78F18C4753E000D2326 /* main.m */; };
+		F6D4A7A318C4753E000D2326 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A7A218C4753E000D2326 /* XCTest.framework */; };
+		F6D4A7A418C4753E000D2326 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78318C4753E000D2326 /* Foundation.framework */; };
+		F6D4A7A518C4753E000D2326 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6D4A78718C4753E000D2326 /* UIKit.framework */; };
+		F6D4A7AD18C4753E000D2326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4A7AB18C4753E000D2326 /* InfoPlist.strings */; };
+		F6D4A7AF18C4753E000D2326 /* SMS2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7AE18C4753E000D2326 /* SMS2Tests.m */; };
+		F6D4A7BC18C476A7000D2326 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6D4A7BB18C476A7000D2326 /* InfoPlist.strings */; };
+		F6D4A7C118C476B0000D2326 /* WSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7BE18C476B0000D2326 /* WSAppDelegate.m */; };
+		F6D4A7CA18C47746000D2326 /* WSConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D4A7C918C47746000D2326 /* WSConstants.m */; };
+		F6E1189618D1C059004204BF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F6E1189918D1C059004204BF /* Localizable.strings */; };
+		F6E1189E18D1DD12004204BF /* WSDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E1189D18D1DD12004204BF /* WSDetailViewController.m */; };
+		F6E118A118D1E003004204BF /* WSMessageDefaultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F6E118A018D1E003004204BF /* WSMessageDefaultCell.xib */; };
+		F6E118A518D1E56F004204BF /* WSMessageDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E118A418D1E56F004204BF /* WSMessageDetailCell.m */; };
+		F6E118B218D72F44004204BF /* WSAvatarService.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E118B118D72F44004204BF /* WSAvatarService.m */; };
+		F6E118E118DAF4EA004204BF /* WSAdditionalPushParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = F6E118E018DAF4EA004204BF /* WSAdditionalPushParameters.m */; };
+		F6E118EF18DB3CA6004204BF /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E118ED18DB3CA0004204BF /* MessageUI.framework */; };
+		F6E1190C18DC2C6B004204BF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6E1190A18DC2C64004204BF /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F6D4A7A618C4753E000D2326 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6D4A77818C4753E000D2326 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6D4A77F18C4753E000D2326;
+			remoteInfo = SMS2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0719161D51B9462EB067C9A3 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		426829B2AFEA443296F78E7A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F612E5D118CF2CD0004FE0C5 /* WSInboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSInboxViewController.h; path = Classes/WSInboxViewController.h; sourceTree = "<group>"; };
+		F612E5D218CF2CD0004FE0C5 /* WSInboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSInboxViewController.m; path = Classes/WSInboxViewController.m; sourceTree = "<group>"; };
+		F612E5DB18CF2EE0004FE0C5 /* WSInboxCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSInboxCell.h; path = Classes/WSInboxCell.h; sourceTree = "<group>"; };
+		F612E5DC18CF2EE0004FE0C5 /* WSInboxCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSInboxCell.m; path = Classes/WSInboxCell.m; sourceTree = "<group>"; };
+		F612E6BF18D04E98004FE0C5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Ressources/Websms/Images.xcassets; sourceTree = "<group>"; };
+		F612E6C118D04E98004FE0C5 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F612E6C218D04E98004FE0C5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		F612E6C318D04E98004FE0C5 /* WSInboxCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSInboxCell.xib; sourceTree = "<group>"; };
+		F612E73218D0678D004FE0C5 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Extension.h"; path = "Classes/UIColor+Extension.h"; sourceTree = "<group>"; };
+		F612E73318D0678D004FE0C5 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Extension.m"; path = "Classes/UIColor+Extension.m"; sourceTree = "<group>"; };
+		F63C0E721920FA5E0045D5FF /* UIImage+Websms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+Websms.h"; path = "Classes/UIImage+Websms.h"; sourceTree = "<group>"; };
+		F63C0E731920FA5E0045D5FF /* UIImage+Websms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Websms.m"; path = "Classes/UIImage+Websms.m"; sourceTree = "<group>"; };
+		F66CD92518E07D3500595207 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F68E6C8718E2BFB90035CDBB /* CLAliases.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLAliases.h; sourceTree = "<group>"; };
+		F694894D1922002000461486 /* ClientGrowingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientGrowingTextView.h; path = Classes/ClientGrowingTextView.h; sourceTree = "<group>"; };
+		F694894E1922002000461486 /* ClientGrowingTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientGrowingTextView.m; path = Classes/ClientGrowingTextView.m; sourceTree = "<group>"; };
+		F694894F1922002000461486 /* ClientLineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ClientLineView.h; path = Classes/ClientLineView.h; sourceTree = "<group>"; };
+		F69489501922002000461486 /* ClientLineView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ClientLineView.m; path = Classes/ClientLineView.m; sourceTree = "<group>"; };
+		F69489531922002900461486 /* WSChatBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSChatBar.h; path = Classes/WSChatBar.h; sourceTree = "<group>"; };
+		F69489541922002900461486 /* WSChatBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSChatBar.m; path = Classes/WSChatBar.m; sourceTree = "<group>"; };
+		F6A010A618CE048A007509EA /* NSUserDefaults+Websms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+Websms.h"; path = "Classes/NSUserDefaults+Websms.h"; sourceTree = "<group>"; };
+		F6A010A718CE048A007509EA /* NSUserDefaults+Websms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSUserDefaults+Websms.m"; path = "Classes/NSUserDefaults+Websms.m"; sourceTree = "<group>"; };
+		F6A010AA18CE0C53007509EA /* WSLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSLoginViewController.h; path = Classes/WSLoginViewController.h; sourceTree = "<group>"; };
+		F6A010AB18CE0C53007509EA /* WSLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSLoginViewController.m; path = Classes/WSLoginViewController.m; sourceTree = "<group>"; };
+		F6A010AE18CE0D7D007509EA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F6A010B018CE0F02007509EA /* WSViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSViewController.h; path = Classes/WSViewController.h; sourceTree = "<group>"; };
+		F6A010B118CE0F02007509EA /* WSViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSViewController.m; path = Classes/WSViewController.m; sourceTree = "<group>"; };
+		F6A010B518CE1374007509EA /* WSPinVerificationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSPinVerificationViewController.h; path = Classes/WSPinVerificationViewController.h; sourceTree = "<group>"; };
+		F6A010B618CE1374007509EA /* WSPinVerificationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSPinVerificationViewController.m; path = Classes/WSPinVerificationViewController.m; sourceTree = "<group>"; };
+		F6A010C618CF08F2007509EA /* WSLoginData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSLoginData.h; path = Classes/WSLoginData.h; sourceTree = "<group>"; };
+		F6A010C718CF08F2007509EA /* WSLoginData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSLoginData.m; path = Classes/WSLoginData.m; sourceTree = "<group>"; };
+		F6A010F418CF2ABD007509EA /* ccmp-example-ios-Staging-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ccmp-example-ios-Staging-Info.plist"; sourceTree = "<group>"; };
+		F6D4A78018C4753E000D2326 /* ccmp-example-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ccmp-example-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D4A78318C4753E000D2326 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F6D4A78518C4753E000D2326 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F6D4A78718C4753E000D2326 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F6D4A78B18C4753E000D2326 /* ccmp-example-ios-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ccmp-example-ios-Info.plist"; sourceTree = "<group>"; };
+		F6D4A78F18C4753E000D2326 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F6D4A79118C4753E000D2326 /* ccmp-example-ios-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ccmp-example-ios-Prefix.pch"; sourceTree = "<group>"; };
+		F6D4A7A118C4753E000D2326 /* ccmp-example-iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ccmp-example-iosTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F6D4A7A218C4753E000D2326 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F6D4A7AA18C4753E000D2326 /* ccmp-example-iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ccmp-example-iosTests-Info.plist"; sourceTree = "<group>"; };
+		F6D4A7AC18C4753E000D2326 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F6D4A7AE18C4753E000D2326 /* SMS2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMS2Tests.m; sourceTree = "<group>"; };
+		F6D4A7BB18C476A7000D2326 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		F6D4A7BD18C476B0000D2326 /* WSAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSAppDelegate.h; path = Classes/WSAppDelegate.h; sourceTree = "<group>"; };
+		F6D4A7BE18C476B0000D2326 /* WSAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSAppDelegate.m; path = Classes/WSAppDelegate.m; sourceTree = "<group>"; };
+		F6D4A7C818C47746000D2326 /* WSConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSConstants.h; path = Classes/WSConstants.h; sourceTree = "<group>"; };
+		F6D4A7C918C47746000D2326 /* WSConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSConstants.m; path = Classes/WSConstants.m; sourceTree = "<group>"; };
+		F6E1189818D1C059004204BF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F6E1189C18D1DD12004204BF /* WSDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSDetailViewController.h; path = Classes/WSDetailViewController.h; sourceTree = "<group>"; };
+		F6E1189D18D1DD12004204BF /* WSDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSDetailViewController.m; path = Classes/WSDetailViewController.m; sourceTree = "<group>"; };
+		F6E118A018D1E003004204BF /* WSMessageDefaultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WSMessageDefaultCell.xib; sourceTree = "<group>"; };
+		F6E118A318D1E56F004204BF /* WSMessageDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSMessageDetailCell.h; path = Classes/WSMessageDetailCell.h; sourceTree = "<group>"; };
+		F6E118A418D1E56F004204BF /* WSMessageDetailCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSMessageDetailCell.m; path = Classes/WSMessageDetailCell.m; sourceTree = "<group>"; };
+		F6E118B018D72F44004204BF /* WSAvatarService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSAvatarService.h; path = Classes/WSAvatarService.h; sourceTree = "<group>"; };
+		F6E118B118D72F44004204BF /* WSAvatarService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSAvatarService.m; path = Classes/WSAvatarService.m; sourceTree = "<group>"; };
+		F6E118DF18DAF4EA004204BF /* WSAdditionalPushParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WSAdditionalPushParameters.h; path = Classes/WSAdditionalPushParameters.h; sourceTree = "<group>"; };
+		F6E118E018DAF4EA004204BF /* WSAdditionalPushParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WSAdditionalPushParameters.m; path = Classes/WSAdditionalPushParameters.m; sourceTree = "<group>"; };
+		F6E118ED18DB3CA0004204BF /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		F6E1190A18DC2C64004204BF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F6D4A77D18C4753E000D2326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66CD92718E07D3B00595207 /* AVFoundation.framework in Frameworks */,
+				F6E1190C18DC2C6B004204BF /* AudioToolbox.framework in Frameworks */,
+				F6E118EF18DB3CA6004204BF /* MessageUI.framework in Frameworks */,
+				F6A010AF18CE0D7D007509EA /* QuartzCore.framework in Frameworks */,
+				F6D4A78618C4753E000D2326 /* CoreGraphics.framework in Frameworks */,
+				F6D4A78818C4753E000D2326 /* UIKit.framework in Frameworks */,
+				F6D4A78418C4753E000D2326 /* Foundation.framework in Frameworks */,
+				0AA0BDCA094A43BBA60DFF90 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D4A79E18C4753E000D2326 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D4A7A318C4753E000D2326 /* XCTest.framework in Frameworks */,
+				F6D4A7A518C4753E000D2326 /* UIKit.framework in Frameworks */,
+				F6D4A7A418C4753E000D2326 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F612E5DA18CF2EC8004FE0C5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				F6E118A318D1E56F004204BF /* WSMessageDetailCell.h */,
+				F6E118A418D1E56F004204BF /* WSMessageDetailCell.m */,
+				F612E5DB18CF2EE0004FE0C5 /* WSInboxCell.h */,
+				F612E5DC18CF2EE0004FE0C5 /* WSInboxCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		F612E6BC18D04E57004FE0C5 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F612E6BF18D04E98004FE0C5 /* Images.xcassets */,
+				F612E6C018D04E98004FE0C5 /* Interfaces */,
+				F6E1189918D1C059004204BF /* Localizable.strings */,
+			);
+			name = Ressources;
+			sourceTree = "<group>";
+		};
+		F612E6C018D04E98004FE0C5 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F612E6C118D04E98004FE0C5 /* Login.storyboard */,
+				F612E6C218D04E98004FE0C5 /* Main.storyboard */,
+				F612E6C318D04E98004FE0C5 /* WSInboxCell.xib */,
+				F6E118A018D1E003004204BF /* WSMessageDefaultCell.xib */,
+			);
+			name = Interfaces;
+			path = Ressources/Websms/Interfaces;
+			sourceTree = "<group>";
+		};
+		F69489561922003D00461486 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F69489531922002900461486 /* WSChatBar.h */,
+				F69489541922002900461486 /* WSChatBar.m */,
+				F694894D1922002000461486 /* ClientGrowingTextView.h */,
+				F694894E1922002000461486 /* ClientGrowingTextView.m */,
+				F694894F1922002000461486 /* ClientLineView.h */,
+				F69489501922002000461486 /* ClientLineView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		F6A010A418CE0469007509EA /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				F6A010A518CE046D007509EA /* Categories */,
+				F612E5DA18CF2EC8004FE0C5 /* Cells */,
+				F6A010B418CE12BB007509EA /* Controller */,
+				F6A010C518CF08DC007509EA /* Models */,
+				F69489561922003D00461486 /* Views */,
+			);
+			name = Other;
+			sourceTree = "<group>";
+		};
+		F6A010A518CE046D007509EA /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				F6A010A618CE048A007509EA /* NSUserDefaults+Websms.h */,
+				F6A010A718CE048A007509EA /* NSUserDefaults+Websms.m */,
+				F612E73218D0678D004FE0C5 /* UIColor+Extension.h */,
+				F612E73318D0678D004FE0C5 /* UIColor+Extension.m */,
+				F63C0E721920FA5E0045D5FF /* UIImage+Websms.h */,
+				F63C0E731920FA5E0045D5FF /* UIImage+Websms.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		F6A010B418CE12BB007509EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F6A010B018CE0F02007509EA /* WSViewController.h */,
+				F6A010B118CE0F02007509EA /* WSViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F6A010C518CF08DC007509EA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F6E118DF18DAF4EA004204BF /* WSAdditionalPushParameters.h */,
+				F6E118E018DAF4EA004204BF /* WSAdditionalPushParameters.m */,
+				F6A010C618CF08F2007509EA /* WSLoginData.h */,
+				F6A010C718CF08F2007509EA /* WSLoginData.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		F6A010CD18CF0AAC007509EA /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F6E118B018D72F44004204BF /* WSAvatarService.h */,
+				F6E118B118D72F44004204BF /* WSAvatarService.m */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		F6D4A77718C4753E000D2326 = {
+			isa = PBXGroup;
+			children = (
+				F6D4A78918C4753E000D2326 /* ccmp-example-ios */,
+				F6D4A7A818C4753E000D2326 /* ccmp-example-iosTests */,
+				F6D4A78218C4753E000D2326 /* Frameworks */,
+				F6D4A78118C4753E000D2326 /* Products */,
+				0719161D51B9462EB067C9A3 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		F6D4A78118C4753E000D2326 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4A78018C4753E000D2326 /* ccmp-example-ios.app */,
+				F6D4A7A118C4753E000D2326 /* ccmp-example-iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6D4A78218C4753E000D2326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F66CD92518E07D3500595207 /* AVFoundation.framework */,
+				F6E1190A18DC2C64004204BF /* AudioToolbox.framework */,
+				F6E118ED18DB3CA0004204BF /* MessageUI.framework */,
+				F6A010AE18CE0D7D007509EA /* QuartzCore.framework */,
+				F6D4A78318C4753E000D2326 /* Foundation.framework */,
+				F6D4A78518C4753E000D2326 /* CoreGraphics.framework */,
+				F6D4A78718C4753E000D2326 /* UIKit.framework */,
+				F6D4A7A218C4753E000D2326 /* XCTest.framework */,
+				426829B2AFEA443296F78E7A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F6D4A78918C4753E000D2326 /* ccmp-example-ios */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4A7B818C47621000D2326 /* Classes */,
+				F6D4A78A18C4753E000D2326 /* Supporting Files */,
+			);
+			name = "ccmp-example-ios";
+			path = SMS2;
+			sourceTree = "<group>";
+		};
+		F6D4A78A18C4753E000D2326 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F612E6BC18D04E57004FE0C5 /* Ressources */,
+				F6D4A78B18C4753E000D2326 /* ccmp-example-ios-Info.plist */,
+				F6A010F418CF2ABD007509EA /* ccmp-example-ios-Staging-Info.plist */,
+				F6D4A7BB18C476A7000D2326 /* InfoPlist.strings */,
+				F6D4A78F18C4753E000D2326 /* main.m */,
+				F6D4A79118C4753E000D2326 /* ccmp-example-ios-Prefix.pch */,
+				F68E6C8718E2BFB90035CDBB /* CLAliases.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6D4A7A818C4753E000D2326 /* ccmp-example-iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4A7AE18C4753E000D2326 /* SMS2Tests.m */,
+				F6D4A7A918C4753E000D2326 /* Supporting Files */,
+			);
+			name = "ccmp-example-iosTests";
+			path = SMS2Tests;
+			sourceTree = "<group>";
+		};
+		F6D4A7A918C4753E000D2326 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4A7AA18C4753E000D2326 /* ccmp-example-iosTests-Info.plist */,
+				F6D4A7AB18C4753E000D2326 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F6D4A7B818C47621000D2326 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4A7C718C476D9000D2326 /* AppDelegate + Constants */,
+				F6D4A7CB18C47856000D2326 /* LoginViewControllers */,
+				F6D4A7CC18C4786C000D2326 /* MainViewControllers */,
+				F6A010A418CE0469007509EA /* Other */,
+				F6A010CD18CF0AAC007509EA /* Services */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		F6D4A7C718C476D9000D2326 /* AppDelegate + Constants */ = {
+			isa = PBXGroup;
+			children = (
+				F6D4A7BD18C476B0000D2326 /* WSAppDelegate.h */,
+				F6D4A7BE18C476B0000D2326 /* WSAppDelegate.m */,
+				F6D4A7C818C47746000D2326 /* WSConstants.h */,
+				F6D4A7C918C47746000D2326 /* WSConstants.m */,
+			);
+			name = "AppDelegate + Constants";
+			sourceTree = "<group>";
+		};
+		F6D4A7CB18C47856000D2326 /* LoginViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F6A010AA18CE0C53007509EA /* WSLoginViewController.h */,
+				F6A010AB18CE0C53007509EA /* WSLoginViewController.m */,
+				F6A010B518CE1374007509EA /* WSPinVerificationViewController.h */,
+				F6A010B618CE1374007509EA /* WSPinVerificationViewController.m */,
+			);
+			name = LoginViewControllers;
+			sourceTree = "<group>";
+		};
+		F6D4A7CC18C4786C000D2326 /* MainViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F612E5D118CF2CD0004FE0C5 /* WSInboxViewController.h */,
+				F612E5D218CF2CD0004FE0C5 /* WSInboxViewController.m */,
+				F6E1189C18D1DD12004204BF /* WSDetailViewController.h */,
+				F6E1189D18D1DD12004204BF /* WSDetailViewController.m */,
+			);
+			name = MainViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F6D4A77F18C4753E000D2326 /* ccmp-example-ios */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D4A7B218C4753E000D2326 /* Build configuration list for PBXNativeTarget "ccmp-example-ios" */;
+			buildPhases = (
+				D2AC0ED2836B42B9AF0CDC29 /* Check Pods Manifest.lock */,
+				F6D4A77C18C4753E000D2326 /* Sources */,
+				F6D4A77D18C4753E000D2326 /* Frameworks */,
+				F6D4A77E18C4753E000D2326 /* Resources */,
+				90C7C90B73094FFAB55F3F42 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ccmp-example-ios";
+			productName = SMS2;
+			productReference = F6D4A78018C4753E000D2326 /* ccmp-example-ios.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F6D4A7A018C4753E000D2326 /* ccmp-example-iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F6D4A7B518C4753E000D2326 /* Build configuration list for PBXNativeTarget "ccmp-example-iosTests" */;
+			buildPhases = (
+				F6D4A79D18C4753E000D2326 /* Sources */,
+				F6D4A79E18C4753E000D2326 /* Frameworks */,
+				F6D4A79F18C4753E000D2326 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6D4A7A718C4753E000D2326 /* PBXTargetDependency */,
+			);
+			name = "ccmp-example-iosTests";
+			productName = SMS2Tests;
+			productReference = F6D4A7A118C4753E000D2326 /* ccmp-example-iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F6D4A77818C4753E000D2326 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Up To Eleven";
+				TargetAttributes = {
+					F6D4A77F18C4753E000D2326 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					F6D4A7A018C4753E000D2326 = {
+						TestTargetID = F6D4A77F18C4753E000D2326;
+					};
+				};
+			};
+			buildConfigurationList = F6D4A77B18C4753E000D2326 /* Build configuration list for PBXProject "ccmp-example-ios" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+				"gsw-CH",
+				gsw,
+			);
+			mainGroup = F6D4A77718C4753E000D2326;
+			productRefGroup = F6D4A78118C4753E000D2326 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F6D4A77F18C4753E000D2326 /* ccmp-example-ios */,
+				F6D4A7A018C4753E000D2326 /* ccmp-example-iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F6D4A77E18C4753E000D2326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F612E6CA18D04E98004FE0C5 /* WSInboxCell.xib in Resources */,
+				F612E6C618D04E98004FE0C5 /* Login.storyboard in Resources */,
+				F612E6C818D04E98004FE0C5 /* Main.storyboard in Resources */,
+				F612E6C418D04E98004FE0C5 /* Images.xcassets in Resources */,
+				F6D4A7BC18C476A7000D2326 /* InfoPlist.strings in Resources */,
+				F6E118A118D1E003004204BF /* WSMessageDefaultCell.xib in Resources */,
+				F6E1189618D1C059004204BF /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D4A79F18C4753E000D2326 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6D4A7AD18C4753E000D2326 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		90C7C90B73094FFAB55F3F42 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D2AC0ED2836B42B9AF0CDC29 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F6D4A77C18C4753E000D2326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F612E5DD18CF2EE0004FE0C5 /* WSInboxCell.m in Sources */,
+				F6E118B218D72F44004204BF /* WSAvatarService.m in Sources */,
+				F6D4A7CA18C47746000D2326 /* WSConstants.m in Sources */,
+				F69489521922002000461486 /* ClientLineView.m in Sources */,
+				F6E118A518D1E56F004204BF /* WSMessageDetailCell.m in Sources */,
+				F6A010B218CE0F02007509EA /* WSViewController.m in Sources */,
+				F69489551922002900461486 /* WSChatBar.m in Sources */,
+				F6D4A7C118C476B0000D2326 /* WSAppDelegate.m in Sources */,
+				F69489511922002000461486 /* ClientGrowingTextView.m in Sources */,
+				F6D4A79018C4753E000D2326 /* main.m in Sources */,
+				F63C0E741920FA5E0045D5FF /* UIImage+Websms.m in Sources */,
+				F6A010A818CE048A007509EA /* NSUserDefaults+Websms.m in Sources */,
+				F612E73418D0678D004FE0C5 /* UIColor+Extension.m in Sources */,
+				F6E118E118DAF4EA004204BF /* WSAdditionalPushParameters.m in Sources */,
+				F6A010AC18CE0C53007509EA /* WSLoginViewController.m in Sources */,
+				F6A010B718CE1374007509EA /* WSPinVerificationViewController.m in Sources */,
+				F6E1189E18D1DD12004204BF /* WSDetailViewController.m in Sources */,
+				F6A010C818CF08F2007509EA /* WSLoginData.m in Sources */,
+				F612E5D318CF2CD0004FE0C5 /* WSInboxViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D4A79D18C4753E000D2326 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F6A010A918CE048A007509EA /* NSUserDefaults+Websms.m in Sources */,
+				F6A010AD18CE0C53007509EA /* WSLoginViewController.m in Sources */,
+				F6D4A7AF18C4753E000D2326 /* SMS2Tests.m in Sources */,
+				F6A010C918CF08F2007509EA /* WSLoginData.m in Sources */,
+				F6A010B818CE1374007509EA /* WSPinVerificationViewController.m in Sources */,
+				F6A010B318CE0F02007509EA /* WSViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6D4A7A718C4753E000D2326 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F6D4A77F18C4753E000D2326 /* ccmp-example-ios */;
+			targetProxy = F6D4A7A618C4753E000D2326 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F6D4A7AB18C4753E000D2326 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6D4A7AC18C4753E000D2326 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F6E1189918D1C059004204BF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F6E1189818D1C059004204BF /* en */,
+			);
+			name = Localizable.strings;
+			path = Ressources/Websms/Translations;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F6D4A7B018C4753E000D2326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "34004AFE-150A-4DA1-B03B-54630BF30712";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F6D4A7B118C4753E000D2326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: sms.at mobile internet services gmbh (49FBFEURK4)";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F6D4A7B318C4753E000D2326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0719161D51B9462EB067C9A3 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS2/ccmp-example-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"LIVE=1",
+				);
+				INFOPLIST_FILE = "SMS2/ccmp-example-ios-Info.plist";
+				PRODUCT_NAME = "ccmp-example-ios";
+				PROVISIONING_PROFILE = "A5E543E3-A399-4C4C-8EE2-3C3EF4FD3B62";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F6D4A7B418C4753E000D2326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0719161D51B9462EB067C9A3 /* Pods.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS2/ccmp-example-ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"LIVE=1",
+				);
+				INFOPLIST_FILE = "SMS2/ccmp-example-ios-Info.plist";
+				PRODUCT_NAME = "ccmp-example-ios";
+				PROVISIONING_PROFILE = "FA664F26-DB92-4779-A2DA-F0FAA6EDFEC5";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F6D4A7B618C4753E000D2326 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0719161D51B9462EB067C9A3 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SMS2.app/SMS2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS2/SMS2-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SMS2Tests/ccmp-example-iosTests-Info.plist";
+				PRODUCT_NAME = "ccmp-example-iosTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F6D4A7B718C4753E000D2326 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0719161D51B9462EB067C9A3 /* Pods.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SMS2.app/SMS2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SMS2/SMS2-Prefix.pch";
+				INFOPLIST_FILE = "SMS2Tests/ccmp-example-iosTests-Info.plist";
+				PRODUCT_NAME = "ccmp-example-iosTests";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F6D4A77B18C4753E000D2326 /* Build configuration list for PBXProject "ccmp-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D4A7B018C4753E000D2326 /* Debug */,
+				F6D4A7B118C4753E000D2326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D4A7B218C4753E000D2326 /* Build configuration list for PBXNativeTarget "ccmp-example-ios" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D4A7B318C4753E000D2326 /* Debug */,
+				F6D4A7B418C4753E000D2326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F6D4A7B518C4753E000D2326 /* Build configuration list for PBXNativeTarget "ccmp-example-iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6D4A7B618C4753E000D2326 /* Debug */,
+				F6D4A7B718C4753E000D2326 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F6D4A77818C4753E000D2326 /* Project object */;
+}

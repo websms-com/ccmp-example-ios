@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="75" id="Izm-Ol-6S0" customClass="WSInboxCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Izm-Ol-6S0" id="v6j-qk-GQm">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="default-avatar.png" translatesAutoresizingMaskIntoConstraints="NO" id="E1C-pa-DCB" userLabel="Avatar View">
+                        <rect key="frame" x="10" y="12" width="50" height="50"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="tkI-yC-h9G"/>
+                            <constraint firstAttribute="height" constant="50" id="vfs-cF-Iiq"/>
+                        </constraints>
+                    </imageView>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="700" verticalHuggingPriority="700" text="Maria Mustermann" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDC-FS-TPp" userLabel="Name Label">
+                        <rect key="frame" x="68" y="8" width="161" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" priority="500" constant="150" id="6jj-Br-kHG"/>
+                            <constraint firstAttribute="height" constant="21" id="vhU-Ga-6v0"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                        <color key="textColor" red="0.12941176470588234" green="0.12941176470588234" blue="0.12941176470588234" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="gestern" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO7-td-yvm" userLabel="Date Label">
+                        <rect key="frame" x="237" y="8" width="48" height="21"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="3BD-E1-b2P"/>
+                            <constraint firstAttribute="width" priority="500" constant="73" id="Fff-UZ-0yd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="14"/>
+                        <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" text="Please tell me the card idea this year does not include us in ugly" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="217" translatesAutoresizingMaskIntoConstraints="NO" id="N3k-Ly-IWS" userLabel="Message Label">
+                        <rect key="frame" x="68" y="29" width="217" height="41"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="500" constant="42" id="EOv-op-jQ4"/>
+                            <constraint firstAttribute="width" constant="217" id="kV1-Fr-eYc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-more.png" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-Ck-WPP" userLabel="Disclousure Indicator">
+                        <rect key="frame" x="290" y="9" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="bWy-UT-mTp"/>
+                            <constraint firstAttribute="width" constant="20" id="ffS-I4-9nm"/>
+                        </constraints>
+                    </imageView>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHZ-qD-I5I" userLabel="Status Indicator">
+                        <rect key="frame" x="68" y="13" width="12" height="12"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.3411764706" green="0.79607843140000001" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="GvE-NY-Eaj"/>
+                            <constraint firstAttribute="width" constant="12" id="iNm-C7-4Ol"/>
+                        </constraints>
+                    </view>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn-attachment-list.png" translatesAutoresizingMaskIntoConstraints="NO" id="bLT-eZ-tAN" userLabel="Attachment Indicator">
+                        <rect key="frame" x="68" y="29" width="20" height="20"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="3oF-yp-AMU"/>
+                            <constraint firstAttribute="width" constant="20" id="r5I-cZ-lWm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dJF-Ck-WPP" firstAttribute="leading" secondItem="tO7-td-yvm" secondAttribute="trailing" constant="5" id="5rW-wH-aku"/>
+                    <constraint firstItem="tO7-td-yvm" firstAttribute="leading" secondItem="uDC-FS-TPp" secondAttribute="trailing" constant="8" id="7dJ-Mz-iAl"/>
+                    <constraint firstItem="E1C-pa-DCB" firstAttribute="leading" secondItem="v6j-qk-GQm" secondAttribute="leading" constant="10" id="ABD-0I-bJO"/>
+                    <constraint firstItem="dJF-Ck-WPP" firstAttribute="top" secondItem="v6j-qk-GQm" secondAttribute="top" constant="9" id="F32-gM-9rg"/>
+                    <constraint firstItem="uDC-FS-TPp" firstAttribute="leading" secondItem="v6j-qk-GQm" secondAttribute="leading" constant="68" id="IZM-5R-WNK"/>
+                    <constraint firstItem="N3k-Ly-IWS" firstAttribute="top" secondItem="tO7-td-yvm" secondAttribute="bottom" id="SVb-ii-gTj"/>
+                    <constraint firstItem="N3k-Ly-IWS" firstAttribute="leading" secondItem="v6j-qk-GQm" secondAttribute="leading" constant="68" id="V8I-v9-QlX"/>
+                    <constraint firstAttribute="trailing" secondItem="dJF-Ck-WPP" secondAttribute="trailing" constant="10" id="WxQ-Tm-lj4"/>
+                    <constraint firstItem="dHZ-qD-I5I" firstAttribute="leading" secondItem="v6j-qk-GQm" secondAttribute="leading" constant="68" id="cXs-bv-4g7"/>
+                    <constraint firstItem="uDC-FS-TPp" firstAttribute="top" secondItem="v6j-qk-GQm" secondAttribute="top" constant="8" id="glQ-Iq-hz8"/>
+                    <constraint firstItem="bLT-eZ-tAN" firstAttribute="leading" secondItem="v6j-qk-GQm" secondAttribute="leading" constant="68" id="gx5-q2-kUw"/>
+                    <constraint firstItem="dHZ-qD-I5I" firstAttribute="centerY" secondItem="uDC-FS-TPp" secondAttribute="centerY" constant="0.5" id="h32-IO-uhI"/>
+                    <constraint firstAttribute="centerY" secondItem="E1C-pa-DCB" secondAttribute="centerY" id="lV0-f7-aT3"/>
+                    <constraint firstItem="tO7-td-yvm" firstAttribute="top" secondItem="v6j-qk-GQm" secondAttribute="top" constant="8" id="ukw-E7-AgR"/>
+                    <constraint firstAttribute="trailing" secondItem="N3k-Ly-IWS" secondAttribute="trailing" constant="35" id="w2g-vZ-l4y"/>
+                    <constraint firstItem="bLT-eZ-tAN" firstAttribute="top" secondItem="uDC-FS-TPp" secondAttribute="bottom" id="yHF-6S-cxX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="attachmentIndicator" destination="bLT-eZ-tAN" id="ian-DX-r05"/>
+                <outlet property="avatarView" destination="E1C-pa-DCB" id="1oi-0H-zmM"/>
+                <outlet property="dateLabel" destination="tO7-td-yvm" id="V6Y-cg-eUS"/>
+                <outlet property="disclosureIndicator" destination="dJF-Ck-WPP" id="NqO-EA-f4e"/>
+                <outlet property="layoutSenderNameLeftConstraint" destination="IZM-5R-WNK" id="fQj-hf-mnN"/>
+                <outlet property="messageExcerptLabel" destination="N3k-Ly-IWS" id="GkC-wU-hHb"/>
+                <outlet property="senderNameLabel" destination="uDC-FS-TPp" id="lbg-Gw-dMg"/>
+                <outlet property="statusIndicator" destination="dHZ-qD-I5I" id="8z8-t4-QWK"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="default-avatar.png" width="25" height="28"/>
+        <image name="icn-attachment-list.png" width="15" height="16"/>
+        <image name="icn-more.png" width="8" height="13"/>
+    </resources>
+</document>

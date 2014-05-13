@@ -1,0 +1,3 @@
+*.lock
+Pods/*
+SMS2App.xcworkspace/xcuserdata/*
