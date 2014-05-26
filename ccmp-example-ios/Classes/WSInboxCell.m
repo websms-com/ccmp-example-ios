@@ -7,7 +7,7 @@
 //
 
 #import "WSInboxCell.h"
-#import <CCMP/CCMPApi.h>
+#import <ccmp-lib-ios/CCMPApi.h>
 #import <limits.h>
 #import "WSAvatarService.h"
 #import "UIImage+Websms.h"

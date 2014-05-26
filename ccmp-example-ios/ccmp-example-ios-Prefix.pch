@@ -14,7 +14,7 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CLog/CLogService.h>
-    #import <CCMP/CCMP.h>
+    #import <ccmp-lib-ios/CCMP.h>
     #import "CLAliases.h"
 
     #import "WSConstants.h"
