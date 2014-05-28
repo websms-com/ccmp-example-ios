@@ -55,7 +55,7 @@ A-8010 Graz<br>
 
 ## License
 
-ccmp-lib-ios is available under the MIT license.
+ccmp-example-ios is available under the MIT license.
 
 Copyright © 2014 sms.at mobile internet services gmbh
 
